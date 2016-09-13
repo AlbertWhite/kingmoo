@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="application">
+<head>
+	<title>湖北金沐装饰</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="dist/css/content.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controller/projectCtrl.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-controller="projectController">
+	<div class="logo-div">
+		<img class="logo-img" src="dist/img/logo.png"/>
+	</div>
+	<div class="nav-div">
+		<ul>
+			<li>
+				<a href="/">首页</a>
+			</li>
+			<li>
+				<a href="/project.html" class="selected">经典案例</a>
+			</li>
+			<li>
+				<a href="/about.html">金沐概况</a>
+			</li>
+			<li>
+				<a href="/contact.html">联系我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="parallex">
+		<div class="uppercase-title">Classic Case</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		经典案例
+		</div>
+	</div>
+	<div class="project-div">
+		<div class="left-nav-div">
+			<h2>工装</h2>
+			<ul>
+				<li ng-click="selectMenu('全部')" class="menu-li selected">
+					<a>全部</a>
+				</li>
+				<li ng-repeat="public in public_menu" ng-click="selectMenu(public)" class="menu-li">
+					<a>{{public}}</a>
+				</li>
+			</ul>
+		</div>
+		<div class="right-content">
+			<div class="row">
+			<div class="col-sm-12">
+			<div class="col-sm-4 project" ng-repeat="case in cases">
+				<div class="case-block" ng-mouseover="mouseover($event)" ng-mouseleave="mouseleave($event)">
+					<img src="{{case.url}}"/>
+					<div class="title-div">{{case.name}}</div>
+					<div class="black-hover">
+						<a href="#">查看更多</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="contact-div">
+		<div class="uppercase-title">Contact</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		联系我们
+		</div>
+		<div class="contact-info-div">
+			<div class="contact-info">
+				电话/Tel：027-82605695
+			</div>
+			<div class="contact-info">
+				Email: yinbo@kingmoo.com.cn
+			</div>
+			<div class="contact-info">
+				地址: 武汉市汉口金银潭宏图路8号武汉客厅E栋24层
+			</div>
+		</div>
+		<img src="dist/img/wechat.jpg"/>
+	</div>
+	<div class="bottom-bar">
+		©湖北金沐装饰设计工程有限公司  鄂ICP备16005380号
+		<span class="support-span">技术支持：港沃网络科技/ganroft.com</span>
+	</div>
+	<script type="text/javascript" src="dist/js/main.js"></script>
+
+</body>
+</html>

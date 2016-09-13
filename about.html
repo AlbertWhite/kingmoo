@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-US" ng-app="application">
+<head>
+	<title>湖北金沐装饰</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="dist/css/content.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/controller/aboutCtrl.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+<body ng-controller="aboutController">
+	<div class="logo-div">
+		<img class="logo-img" src="dist/img/logo.png"/>
+	</div>
+	<div class="nav-div">
+		<ul>
+			<li>
+				<a href="/">首页</a>
+			</li>
+			<li>
+				<a href="/project.html">经典案例</a>
+			</li>
+			<li>
+				<a href="/about.html" class="selected">金沐概况</a>
+			</li>
+			<li>
+				<a href="/contact.html">联系我们</a>
+			</li>
+		</ul>
+	</div>
+	<div class="parallex about">
+		<div class="uppercase-title">About Kingmoo</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		金沐概况
+		</div>
+	</div>
+	<div class="idea-div">
+		<div class="uppercase-title">Kingmoo Idea</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		金沐理念
+		</div>
+		<div class="idea">
+			<div class="left">
+				<img src="dist/img/about.jpg"/>
+			</div>
+			<div class="right">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;湖北金沐装饰设计工程有限公司(Hubei kingmoo decoration design & engineering co.,ltd，简称“金沐装饰”)，始创于2004年，是集设计、施工、软装及饰品研发为一体的综合型装饰企业。公司汇聚经验丰富的设计团队、运营团队和施工团队，以“阳光、务实、创新、尊贵、成长”为核心价值观为客户创造价值，共同成长！</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司可为地产营销中心、样板间和精装房，办公楼、医院、酒店、餐饮、娱乐会所、豪华住宅提供设计、施工、软装及饰品定制的产品和服务。</p>
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;公司已为万科、保利、恒大地产、万达、沿海、金地集团、武汉广电、红星美凯龙等打造多个精品工程，深受客户信赖。
+				</p>
+			</div>
+			<img src="dist/img/about-1.png"/>
+		</div>
+		<div class="uppercase-title">Service Process</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		服务流程
+		</div>
+		<img src="dist/img/about-2.png"/>
+		<div class="uppercase-title">Partners</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		合作伙伴
+		</div>
+		<div class="partner-table">
+			<div class="row">
+			<div class="col-sm-12">
+			<div class="col-sm-3" ng-repeat="partner in partners"> 
+			<div class="partner" >
+				<img class="partner-img"src="{{partner}}"/>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="contact-div">
+		<div class="uppercase-title">Contact</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		联系我们
+		</div>
+		<div class="contact-info-div">
+			<div class="contact-info">
+				电话/Tel：027-82605695
+			</div>
+			<div class="contact-info">
+				Email: yinbo@kingmoo.com.cn
+			</div>
+			<div class="contact-info">
+				地址: 武汉市汉口金银潭宏图路8号武汉客厅E栋24层
+			</div>
+		</div>
+		<img src="dist/img/wechat.jpg"/>
+	</div>
+	<div class="bottom-bar">
+		©湖北金沐装饰设计工程有限公司  鄂ICP备16005380号
+		<span class="support-span">技术支持：港沃网络科技/ganroft.com</span>
+	</div>
+	<script type="text/javascript" src="dist/js/main.js"></script>
+
+</body>
+</html>
