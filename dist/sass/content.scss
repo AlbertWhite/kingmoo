@@ -367,3 +367,48 @@ body{
 		padding-bottom:100px;
 	}
 }
+
+.modal-dialog{
+	width: 70% !important;
+}
+
+.modal-content{
+	background-color: rgba(34,35,30,0.7) !important;
+}
+
+.modal-header{
+	border-bottom: 1px solid #9f8452 !important;
+	& .modal-title{
+		color: #9F8452;
+	    font-size: 32px;
+	    font-family: weiruanyahei;
+	    padding: 25px;
+	}
+}
+
+.modal-body{
+	& .modal-hr{
+		width:100%;
+		background-color:#9F8452;
+		height:5px;
+	}
+
+	& .img-block img{
+		display: block;
+		margin:10px auto;
+	}
+
+	& .project-info{
+		display: block;
+		margin:50px 10px;
+		padding-left:50px;
+		& .info{
+			color: #9F8452;
+			font-size:20px;
+			width:45%;
+			display:inline-block;
+			padding-top:10px;
+		}
+	}
+}
+

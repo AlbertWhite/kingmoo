@@ -60,7 +60,7 @@
 					<img src="{{case.url}}"/>
 					<div class="title-div">{{case.name}}</div>
 					<div class="black-hover">
-						<a href="#">查看更多</a>
+						<a href="#" data-toggle="modal" data-target="#myModal" ng-click="openModal(case.name)">查看更多</a>
 					</div>
 				</div>
 			</div>
@@ -69,6 +69,35 @@
 
 		</div>
 	</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+	  <div class="modal-header">
+		<h4 class="modal-title">项目介绍 - {{projectName}}</h4>
+	  </div>
+      <div class="modal-body">
+      	<div class="project-info">
+      		<div class="info">项目时间：{{projectTime}}</div>
+      		<div class="info">项目面积：{{projectSize}}</div>
+      		<div class="info">委托单位：{{projectFor}}</div>
+      		<div class="info">工程地点：{{projectLocation}}</div>
+      	</div>
+        <div class="img-block" ng-repeat = "projectImg in projectImgs">
+        	<img src="{{projectImg}}"/>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+       </div>
+    </div>
+
+
+  </div>
+</div>
 
 	<div class="contact-div">
 		<div class="uppercase-title">Contact</div>
