@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="application">
+<html lang="en-US">
 <head>
 	<title>湖北金沐装饰</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -7,12 +7,12 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/content.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
 	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/route.js"></script>
 	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </head>
-<body>
+<body ng-app="routeApp">
 	<div class="logo-div">
 		<img class="logo-img" src="dist/img/logo.png"/>
 	</div>
@@ -28,14 +28,25 @@
 				<a href="./about.html">金沐概况</a>
 			</li>
 			<li>
-				<a href="./knowledge.html">装修知识</a>
+				<a href="./knowledge.html#/" class="selected">装修知识</a>
 			</li>
 			<li>
-				<a href="./contact.html" class="selected">联系我们</a>
+				<a href="./contact.html">联系我们</a>
 			</li>
 		</ul>
 	</div>
-	<div class="parallex contact">
+	<div class="parallex knowledge">
+		<div class="uppercase-title">Decorative knowledge</div>
+		<div class="partner-block"></div>
+		<div class="partner-title">
+		装修知识
+		</div>
+	</div>
+
+	<div class="knowledge-div" ng-controller = "knowledgeController">
+		<div ng-view>
+			
+		</div>
 	</div>
 
 	<div class="contact-div">
@@ -61,7 +72,6 @@
 		©湖北金沐装饰设计工程有限公司  鄂ICP备16005380号
 		<span class="support-span">技术支持：港沃网络科技/ganroft.com</span>
 	</div>
-	<script type="text/javascript" src="dist/js/main.js"></script>
-
 </body>
+<script type="text/javascript" src="dist/js/main.js"></script>
 </html>

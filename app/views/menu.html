@@ -1,0 +1,26 @@
+<div class="left-nav-div">
+	<ul>
+		<li class="menu-li" ng-click="selectMenu('全部')">
+			<a>全部</a>
+		</li>
+		<li class="menu-li" ng-click="selectMenu('建材知识')">
+			<a>建材知识</a>
+		</li>
+		<li class="menu-li" ng-click="selectMenu('家具知识')">
+			<a>家具知识</a>
+		</li>
+		<li class="menu-li" ng-click="selectMenu('热门装饰')">
+			<a>热门装饰</a>
+		</li>
+	</ul>
+</div>
+<div class="right-content-div">
+	<div class="menu">
+		<ul>
+			<li ng-repeat = "article in articles">
+				<a href="{{article.url}}">{{article.name}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
