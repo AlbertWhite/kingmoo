@@ -1,6 +1,10 @@
+html{
+	width:100%;
+}
+
 body{
 	background-color:#453f39 !important;
-	margin:0;
+	width:100%;
 }
 
 .logo-div{
@@ -248,7 +252,7 @@ body{
 		color:#3c3731;
 		font-size:18px;
 		text-decoration: none;
-    	padding: 5px 20px;
+    	padding: 5px 0px;
 	}
 	& .right-content{
 		display:inline-block;
@@ -351,11 +355,13 @@ body{
 		& img{
 			margin-top:50px;
 			margin-bottom:100px;
+			width:90%;
 		}
 	}
 	& img{
 		margin-top:50px;
 		margin-bottom:100px;
+		width:90%;
 	}
 	& .partner{
 		display:inline-block;
@@ -475,6 +481,7 @@ body{
 	& .img-block img{
 		display: block;
 		margin:10px auto;
+		width:100%;
 	}
 
 	& .project-info{
@@ -484,10 +491,20 @@ body{
 		& .info{
 			color: #9F8452;
 			font-size:20px;
-			width:45%;
+			width:43%;
+			vertical-align:top;
 			display:inline-block;
 			padding-top:10px;
 		}
+	}
+}
+
+.modal-footer{
+	border-top:none !important;
+	& button{
+		color: #fff !important;
+	    background-color: #23201d !important;
+	    border-color: #fff !important;
 	}
 }
 
