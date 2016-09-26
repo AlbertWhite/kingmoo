@@ -24,6 +24,7 @@ $(document).ready(function(){
         $(this).find(".black-hover").removeClass("show");
     });
 
+    console.log("234");
     $(".menu-li").click(function(){
         $(".menu-li").removeClass("selected");
         $(this).addClass("selected");
