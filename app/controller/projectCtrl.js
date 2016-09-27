@@ -191,6 +191,19 @@ angular.module("application").controller('projectController', function($scope) {
 				"dist/img/project/ktv3.jpg",
 				"dist/img/project/ktv4.jpg"
 			];
+		}else if(name == "武汉乐福园酒店"){
+			$scope.projectName = "武汉乐福园酒店";
+			$scope.projectTime = "2015年1月";
+			$scope.projectSize = "5000㎡";
+			$scope.projectFor = "深圳城市建筑装饰工程有限公司";
+			$scope.projectLocation = "湖北武汉";
+
+			$scope.projectImgs = [
+				"dist/img/project/lefuyuan1.jpeg",
+				"dist/img/project/lefuyuan2.jpg",
+				"dist/img/project/lefuyuan3.jpg",
+				"dist/img/project/lefuyuan4.jpg"
+			];
 		}else if(name == "武汉市第五人民医院"){
 			$scope.projectName = "武汉市第五人民医院";
 			$scope.projectTime = "2008年1月";
@@ -212,7 +225,6 @@ angular.module("application").controller('projectController', function($scope) {
 			$scope.projectLocation = "湖北武汉";
 
 			$scope.projectImgs = [
-				"dist/img/project/dichan1.jpeg",
 				"dist/img/project/dichan2.jpg",
 				"dist/img/project/dichan3.jpg",
 				"dist/img/project/dichan4.jpg",

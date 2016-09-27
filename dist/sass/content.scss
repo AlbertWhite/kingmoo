@@ -65,6 +65,7 @@ body{
 
 	& img{
 		margin:0 auto;
+		height:600px !important;
 	}
 
 	& .carousel-overlay-a{
@@ -231,7 +232,7 @@ body{
 	}
 	& .left-nav-div ul li{
 		list-style:none;
-		padding:10px 0px;
+		padding:10px;
 		transition:all 0.8s;
 		width:auto;
 		cursor:pointer;
@@ -430,7 +431,7 @@ body{
 			width:300px;
 		}
 		& .menu ul li a{
-			font-size: 20px;
+			font-size: 17px;
 			color: #3c3731;
 			cursor:pointer;   
 		}
